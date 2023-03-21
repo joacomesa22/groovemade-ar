@@ -12,13 +12,6 @@ const getDefaultCart = () => {
   return cart;
 };
 
-// cart = {
-//   1: 0,
-//   2: 0,
-//   3: 2,
-//   4: 1
-// }
-
 export const ShopContextProvider = (props) => {
   const [cartItems, setCartItems] = useState(getDefaultCart());
 

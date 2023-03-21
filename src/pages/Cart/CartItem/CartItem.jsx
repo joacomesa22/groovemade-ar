@@ -1,24 +1,20 @@
 import React from "react";
-import {
-  CartItemCard,
-  CartItemCardImg,
-  CartItemCardText,
-} from "./CartItem.style";
 import ItemCount from "../ItemCount/ItemCount";
+import "./CartItem.css";
 
 function CartItem(props) {
   const { id, productName, productImage, price } = props.data;
   return (
-    <CartItemCard>
-      <CartItemCardImg>
+    <div className="cartItemCard">
+      <div className="cartItemCard__img">
         <img src={productImage} alt={productName} />
-      </CartItemCardImg>
-      <CartItemCardText>
+      </div>
+      <div className="cartItemCard__text">
         <h2>{productName}</h2>
         <h2>${price}</h2>
-      </CartItemCardText>
+      </div>
       <ItemCount data={props.data} />
-    </CartItemCard>
+    </div>
   );
 }
 

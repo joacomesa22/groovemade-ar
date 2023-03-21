@@ -1,0 +1,25 @@
+.checkOutSection {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.checkOutSubtotal {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.checkOutBtn {
+  padding: 6px;
+  background-color: #000;
+  color: #fff;
+  border: 2px solid #000;
+  font-size: 1.2rem;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.checkOutBtn:hover {
+  color: #000;
+  background-color: #fff;
+}

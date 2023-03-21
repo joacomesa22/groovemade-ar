@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { ShopContext } from "../../../context/ShopContext";
 import { useNavigate } from "react-router-dom";
+import "./Checkout.css";
 
 function Checkout() {
   const { getTotalAmount } = useContext(ShopContext);
@@ -10,16 +11,17 @@ function Checkout() {
   return (
     <>
       {totalAmount > 0 ? (
-        <div>
-          <p>Subtotal: ${totalAmount}</p>
+        <div className="checkOutSection">
+          <p className="checkOutSubtotal">Subtotal: ${totalAmount}</p>
           <button
+            className="checkOutBtn"
             onClick={() => {
               navigate("/shop");
             }}
           >
             Continuar comprando
           </button>
-          <button>Checkout</button>
+          <button className="checkOutBtn">Checkout</button>
         </div>
       ) : (
         <h3>Su carrito esta vacío</h3>

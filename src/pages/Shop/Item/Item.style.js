@@ -1,7 +1,7 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const ItemCardContainer = styled.div`
-  padding: 1rem;
   border: 4px solid #000;
   display: flex;
   gap: 0.8rem;
@@ -15,13 +15,18 @@ export const ItemCardImgContainer = styled.div`
 
   img {
     width: 100%;
+    border-radius: 12px;
+
+    :hover {
+      filter: opacity(0.8);
+    }
   }
 `;
 
 export const ItemCardTextContainer = styled.div`
-  width: 100%;
   display: flex;
   justify-content: space-between;
+  width: 90%;
 `;
 export const ItemCardText = styled.p`
   font-size: 1.2rem;
@@ -32,4 +37,16 @@ export const ItemCardDescription = styled.p`
 `;
 export const ItemCardButton = styled.button`
   padding: 8px;
+`;
+
+export const StyledLink = styled(Link)`
+  text-decoration: none;
+  color: #000;
+  padding: 4px;
+  transition: all 0.3s;
+
+  :hover {
+    background-color: #000;
+    color: #fff;
+  }
 `;

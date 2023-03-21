@@ -9,6 +9,8 @@ import Error from "./components/Error";
 import Shop from "./pages/Shop/Shop";
 import Cart from "./pages/Cart/CartItems/CartItems";
 import { ShopContextProvider } from "./context/ShopContext";
+import ItemDetailContainer from "./pages/Shop/ItemDetailContainer/ItemDetailContainer";
+import ItemListContainer from "./pages/Shop/ItemListContainer/ItemListContainer";
 
 function App() {
   return (
@@ -18,8 +20,13 @@ function App() {
           <NavBar />
           <Routes>
             <Route path="/" exact element={<Home />} />
-            <Route path="/shop" exact element={<Shop />} />
-            <Route path="/category/:id" exact element={<Shop />} />
+            <Route path="/shop" exact element={<ItemListContainer />} />
+            <Route
+              path="/shop/:category"
+              exact
+              element={<ItemListContainer />}
+            />
+            <Route path="/item/:id" exact element={<ItemDetailContainer />} />
             <Route path="/cart" exact element={<Cart />} />
             <Route path="/about" exact element={<About />} />
             <Route path="/contact" exact element={<Contact />} />

@@ -6,7 +6,9 @@ import {
   ItemCardTextContainer,
   ItemCardText,
   ItemCardButton,
+  StyledLink,
 } from "./Item.style";
+import { Link } from "react-router-dom";
 
 function Item(props) {
   const { addToCart, cartItems } = useContext(ShopContext);
@@ -15,13 +17,16 @@ function Item(props) {
   const cartItemAmount = cartItems[id];
   return (
     <ItemCardContainer>
-      <ItemCardImgContainer>
-        <img src={productImage} alt={productName} />
-      </ItemCardImgContainer>
+      <Link to={"/item/" + id}>
+        <ItemCardImgContainer>
+          <img src={productImage} alt={productName} />
+        </ItemCardImgContainer>
+      </Link>
 
       <ItemCardTextContainer>
-        <a href="">Ver Producto</a>
-        <ItemCardText>{productName}</ItemCardText>
+        <StyledLink to={"/item/" + id}>
+          <ItemCardText>{productName}</ItemCardText>
+        </StyledLink>
         <ItemCardText>{price}</ItemCardText>
       </ItemCardTextContainer>
 

@@ -10,7 +10,7 @@ export const CartContainer = styled.div`
 export const CartIcon = styled(FontAwesomeIcon)`
   font-size: 1.2rem;
   transition: all 0.3s;
-  color: #75aadb;
+  color: #00aae4;
   cursor: pointer;
   &:hover {
     transform: scale(1.05);
