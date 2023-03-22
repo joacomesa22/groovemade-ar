@@ -1,0 +1,22 @@
+.cartWidget {
+  display: flex;
+  gap: 2px;
+  align-items: center;
+}
+
+.cartWidget__icon {
+  font-size: 1.2rem;
+  transition: all 0.3s;
+  color: #00aae4;
+  cursor: pointer;
+}
+
+.cartWidget__icon:hover {
+  color: #fff;
+}
+
+.cartWidget__counter {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #fff;
+}

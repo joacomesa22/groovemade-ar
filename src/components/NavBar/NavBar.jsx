@@ -2,31 +2,37 @@ import React from "react";
 import logoFull from "../../assets/logoFull.png";
 import CartWidget from "../CartWidget/CartWidget";
 import { Link } from "react-router-dom";
-
-import {
-  HeaderContainer,
-  NavbarLogoContainer,
-  NavbarLogo,
-  NavBarLinksContainer,
-  NavBarLink,
-} from "./NavBar.style";
+import { useNavigate } from "react-router-dom";
+import "./NavBar.css";
 
 export default function Navbar() {
+  const navigate = useNavigate();
+
   return (
-    <HeaderContainer>
-      <NavbarLogoContainer>
-        <Link to="/">
-          <NavbarLogo src={logoFull} />
+    <header className="header">
+      <div className="header__logoContainer">
+        <img
+          src={logoFull}
+          onClick={() => {
+            navigate("/");
+          }}
+          alt="logo"
+        />
+      </div>
+      <nav className="headerLinks">
+        <Link to="/shop" className="headerLinks__link">
+          Shop
         </Link>
-      </NavbarLogoContainer>
-      <NavBarLinksContainer>
-        <NavBarLink to="/shop">Shop</NavBarLink>
-        <NavBarLink to="/about">About</NavBarLink>
-        <NavBarLink to="/contact">Contact</NavBarLink>
-      </NavBarLinksContainer>
-      <Link to="cart">
+        <Link to="/about" className="headerLinks__link">
+          About
+        </Link>
+        <Link to="/contact" className="headerLinks__link">
+          Contact
+        </Link>
+      </nav>
+      <Link to="/cart">
         <CartWidget />
       </Link>
-    </HeaderContainer>
+    </header>
   );
 }

@@ -1,67 +1,131 @@
-import product1 from "./assets/products/1.png";
-import product2 from "./assets/products/2.png";
-import product3 from "./assets/products/3.png";
-import product4 from "./assets/products/4.png";
-import product5 from "./assets/products/5.png";
-import product6 from "./assets/products/6.webp";
-import product7 from "./assets/products/7.webp";
-import product8 from "./assets/products/8.webp";
+import product1 from "./assets/products/deskshelf.jpeg";
+import product2 from "./assets/products/headphoneStand.jpeg";
+import product3 from "./assets/products/ipadStand.jpeg";
+import product4 from "./assets/products/laptopStand.jpeg";
+import product5 from "./assets/products/leatherDeskpad.jpg";
+import product6 from "./assets/products/laptopDock.jpeg";
+import product7 from "./assets/products/magsafeStand.jpeg";
+import product8 from "./assets/products/monitorRiser.jpeg";
+import product9 from "./assets/products/mousePad.jpeg";
+import product10 from "./assets/products/woodPenCup.jpeg";
+import product11 from "./assets/products/woodPlanter.jpeg";
+import product12 from "./assets/products/woolDeskpad.jpg";
+import product13 from "./assets/products/keyboardTray.jpg";
+import product14 from "./assets/products/trackpadTray.jpg";
+import product15 from "./assets/products/laptopRiser.jpg";
+import product16 from "./assets/products/wristRest.jpg";
 
 export const PRODUCTS = [
   {
     id: 1,
-    productName: "IPhone",
-    price: 999.0,
+    productName: "Desk Shelf",
+    price: 30000,
     productImage: product1,
-    productCategory: "tecnologia",
+    productCategory: "laptopsMonitores",
   },
   {
     id: 2,
-    productName: "Macbook Pro 2022 (M1)",
-    price: 1999.0,
+    productName: "Headphones Stand",
+    price: 5000,
     productImage: product2,
-    productCategory: "tecnologia",
+    productCategory: "stands",
   },
   {
     id: 3,
-    productName: "Cannon M50 Camera",
-    price: 699.0,
+    productName: "iPad Stand",
+    price: 12000,
     productImage: product3,
-    productCategory: "tecnologia",
+    productCategory: "stands",
   },
   {
     id: 4,
-    productName: "WLS Van Gogh Denim Jacket",
-    price: 228.0,
+    productName: "Laptop Riser",
+    price: 16000,
     productImage: product4,
-    productCategory: "ropa",
+    productCategory: "laptopsMonitores",
   },
   {
     id: 5,
-    productName: "LED Light Strips",
-    price: 19.99,
+    productName: "Leather Desk Pad",
+    price: 6500,
     productImage: product5,
-    productCategory: "tecnologia",
+    productCategory: "mouseTeclados",
   },
   {
     id: 6,
-    productName: "SPECTRUM LS TEE",
-    price: 68.0,
+    productName: "Laptop Dock",
+    price: 10000,
     productImage: product6,
-    productCategory: "ropa",
+    productCategory: "laptopsMonitores",
   },
   {
     id: 7,
-    productName: "AUTO SERVICE SHIRT by GOLF WANG",
-    price: 120.0,
+    productName: "MagSafe Stand",
+    price: 7000,
     productImage: product7,
-    productCategory: "ropa",
+    productCategory: "stands",
   },
   {
     id: 8,
-    productName: "DON'T TRIP UNSTRUCTURED HAT",
-    price: 40.0,
+    productName: "Monitor Riser",
+    price: 18000,
     productImage: product8,
-    productCategory: "ropa",
+    productCategory: "laptopsMonitores",
+  },
+  {
+    id: 9,
+    productName: "Leather Mouse Pad",
+    price: 4000,
+    productImage: product9,
+    productCategory: "mouseTeclados",
+  },
+  {
+    id: 10,
+    productName: "Pen Cup",
+    price: 2000,
+    productImage: product10,
+    productCategory: "otros",
+  },
+  {
+    id: 11,
+    productName: "Planter",
+    price: 2500,
+    productImage: product11,
+    productCategory: "otros",
+  },
+  {
+    id: 12,
+    productName: "Wool Desk Pad",
+    price: 6000,
+    productImage: product12,
+    productCategory: "mouseTeclados",
+  },
+  {
+    id: 13,
+    productName: "Magic Keyboard Tray",
+    price: 4000,
+    productImage: product13,
+    productCategory: "mouseTeclados",
+  },
+  {
+    id: 14,
+    productName: "Trackpad Tray",
+    price: 3500,
+    productImage: product14,
+    productCategory: "mouseTeclados",
+  },
+  {
+    id: 15,
+    productName: "Laptop Riser v2",
+    price: 22000,
+    productImage: product15,
+    productCategory: "laptopsMonitores",
+  },
+  {
+    id: 16,
+    productName: "Wrist Rest",
+    price: 5000,
+    productImage: product16,
+    productCategory: "mouseTeclados",
   },
 ];

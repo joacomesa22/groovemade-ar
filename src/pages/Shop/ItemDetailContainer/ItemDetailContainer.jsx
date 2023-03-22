@@ -4,10 +4,7 @@ import { useParams } from "react-router-dom";
 import ItemDetail from "../ItemDetail/ItemDetail";
 import { useNavigate } from "react-router-dom";
 import { PRODUCTS } from "../../../products";
-import {
-  DetailContainer,
-  DetailContainerBtn,
-} from "./ItemDetailContainer.style";
+import "./ItemDetailContainer.css";
 
 function ItemDetailContainer() {
   const [products, setProducts] = useState([]);
@@ -27,16 +24,17 @@ function ItemDetailContainer() {
   }, [id]);
 
   return (
-    <DetailContainer>
-      <DetailContainerBtn
+    <section className="detailSection">
+      <button
+        className="detailSection__btn"
         onClick={() => {
           navigate("/shop");
         }}
       >
         Regresar
-      </DetailContainerBtn>
+      </button>
       <ItemDetail prods={products} />
-    </DetailContainer>
+    </section>
   );
 }
 

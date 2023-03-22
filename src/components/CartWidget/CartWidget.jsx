@@ -1,7 +1,8 @@
 import React, { useContext } from "react";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
-import { CartContainer, CartIcon, CartCounter } from "./CartWidget.style";
 import { ShopContext } from "../../context/ShopContext";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "./CartWidget.css";
 
 export default function CartWidget() {
   const { cartItems } = useContext(ShopContext);
@@ -15,9 +16,9 @@ export default function CartWidget() {
   };
 
   return (
-    <CartContainer>
-      <CartIcon icon={faShoppingCart} />
-      <CartCounter>{totalItems()}</CartCounter>
-    </CartContainer>
+    <div className="cartWidget">
+      <FontAwesomeIcon icon={faShoppingCart} className="cartWidget__icon" />
+      <span className="cartWidget__counter">{totalItems()}</span>
+    </div>
   );
 }

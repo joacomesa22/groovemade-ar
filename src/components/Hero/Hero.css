@@ -1,0 +1,15 @@
+.hero {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero__text {
+  color: #fff;
+  font-size: 4rem;
+  font-family: cursive, serif;
+}

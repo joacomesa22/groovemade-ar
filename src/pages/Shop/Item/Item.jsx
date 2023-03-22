@@ -1,43 +1,55 @@
 import React, { useContext } from "react";
 import { ShopContext } from "../../../context/ShopContext";
-import {
-  ItemCardContainer,
-  ItemCardImgContainer,
-  ItemCardTextContainer,
-  ItemCardText,
-  ItemCardButton,
-  StyledLink,
-} from "./Item.style";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import "./Item.css";
 
 function Item(props) {
   const { addToCart, cartItems } = useContext(ShopContext);
   const { id, productName, productImage, price } = props.data;
+  const navigate = useNavigate();
 
   const cartItemAmount = cartItems[id];
   return (
-    <ItemCardContainer>
-      <Link to={"/item/" + id}>
-        <ItemCardImgContainer>
-          <img src={productImage} alt={productName} />
-        </ItemCardImgContainer>
-      </Link>
+    <div className="itemCard">
+      <div className="itemCard__img">
+        <img
+          src={productImage}
+          alt={productName}
+          onClick={() => {
+            navigate("/item/" + id);
+          }}
+        />
+      </div>
 
-      <ItemCardTextContainer>
-        <StyledLink to={"/item/" + id}>
-          <ItemCardText>{productName}</ItemCardText>
-        </StyledLink>
-        <ItemCardText>{price}</ItemCardText>
-      </ItemCardTextContainer>
+      <div className="itemCard__text">
+        <p
+          className="itemCard__text--info"
+          onClick={() => {
+            navigate("/item/" + id);
+          }}
+        >
+          {productName}
+        </p>
 
-      <ItemCardButton
+        <p
+          className="itemCard__text--info"
+          onClick={() => {
+            navigate("/item/" + id);
+          }}
+        >
+          ${price}
+        </p>
+      </div>
+
+      <button
+        className="itemCard__btn"
         onClick={() => {
           addToCart(id);
         }}
       >
         Add to Cart {cartItemAmount > 0 && <>({cartItemAmount})</>}
-      </ItemCardButton>
-    </ItemCardContainer>
+      </button>
+    </div>
   );
 }
 

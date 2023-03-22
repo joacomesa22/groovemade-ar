@@ -1,15 +1,12 @@
 import React from "react";
-import { ItemsContainer } from "./ItemList.style";
 import Item from "../Item/Item";
+import "./ItemList.css";
 function ItemList({ products }) {
   return (
-    <div>
-      <div></div>
-      <ItemsContainer>
-        {products.map((prod) => {
-          return <Item data={prod} key={prod.id} />;
-        })}
-      </ItemsContainer>
+    <div className="itemsContainer">
+      {products.map((prod) => {
+        return <Item data={prod} key={prod.id} />;
+      })}
     </div>
   );
 }

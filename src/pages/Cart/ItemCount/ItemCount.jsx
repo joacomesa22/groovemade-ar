@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { ItemCountContainer } from "./ItemCount.style";
+import "./ItemCount.css";
 import { ShopContext } from "../../../context/ShopContext";
 
 function ItemCount(props) {
@@ -8,11 +8,12 @@ function ItemCount(props) {
   const { id } = props.data;
 
   return (
-    <ItemCountContainer>
+    <div className="itemCount">
       <button
         onClick={() => {
           addToCart(id);
         }}
+        className="itemCount__btn"
       >
         +
       </button>
@@ -21,15 +22,17 @@ function ItemCount(props) {
         onChange={(e) => {
           updateCartItemCount(Number(e.target.value), id);
         }}
+        className="itemCount__counter"
       />
       <button
         onClick={() => {
           removeFromCart(id);
         }}
+        className="itemCount__btn"
       >
         -
       </button>
-    </ItemCountContainer>
+    </div>
   );
 }
 
