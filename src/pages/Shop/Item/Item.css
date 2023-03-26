@@ -10,6 +10,7 @@
 .itemCard__img img {
   width: 100%;
   cursor: pointer;
+  transition: all 0.3s;
 }
 
 .itemCard__img img:hover {
@@ -19,6 +20,7 @@
 .itemCard__text {
   display: flex;
   flex-direction: column;
+  gap: 4px;
   justify-content: flex-start;
   width: 100%;
 }
@@ -26,28 +28,5 @@
 .itemCard__text--info {
   font-size: 0.8rem;
   color: #999999;
-  transition: all 0.3s;
   cursor: pointer;
-}
-
-.itemCard__text--info:hover {
-  color: #000;
-}
-
-.itemCard__btn {
-  padding: 8px 0;
-  border: none;
-  color: #fff;
-  font-weight: bold;
-  width: 100%;
-  background: #999999;
-  border: 2px solid #999999;
-  cursor: pointer;
-  transition: all 0.3s;
-}
-
-.itemCard__btn:hover {
-  background: transparent;
-  border: 2px solid #999999;
-  color: #999999;
 }

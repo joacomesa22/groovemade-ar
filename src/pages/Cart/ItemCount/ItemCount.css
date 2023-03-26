@@ -1,16 +1,24 @@
 .itemCount {
   display: flex;
-  gap: 1rem;
-  border: 1px solid #000;
-  border-radius: 8px;
-  padding: 10px;
+  gap: 0.5rem;
 }
 
 .itemCount__counter {
-  width: 40px;
+  width: 36px;
   text-align: center;
 }
 
 .itemCount__btn {
-  padding: 8px;
+  background: #262626;
+  border: none;
+  color: #fff;
+  font-size: 1.1rem;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.itemCount__btn:hover {
+  background: #555555;
 }

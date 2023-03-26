@@ -3,7 +3,7 @@ import ItemCount from "../ItemCount/ItemCount";
 import "./CartItem.css";
 
 function CartItem(props) {
-  const { id, productName, productImage, price } = props.data;
+  const { productName, productImage, price } = props.data;
   return (
     <div className="cartItemCard">
       <div className="cartItemCard__img">

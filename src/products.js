@@ -21,6 +21,8 @@ export const PRODUCTS = [
     productName: "Desk Shelf",
     price: 30000,
     productImage: product1,
+    productDescription:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et enim provident autem voluptatem corporis, quisquam laborum illo temporibus dignissimos maiores.",
     productCategory: "laptopsMonitores",
   },
   {
@@ -28,6 +30,8 @@ export const PRODUCTS = [
     productName: "Headphones Stand",
     price: 5000,
     productImage: product2,
+    productDescription:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et enim provident autem voluptatem corporis, quisquam laborum illo temporibus dignissimos maiores.",
     productCategory: "stands",
   },
   {
@@ -35,6 +39,8 @@ export const PRODUCTS = [
     productName: "iPad Stand",
     price: 12000,
     productImage: product3,
+    productDescription:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et enim provident autem voluptatem corporis, quisquam laborum illo temporibus dignissimos maiores.",
     productCategory: "stands",
   },
   {
@@ -42,6 +48,8 @@ export const PRODUCTS = [
     productName: "Laptop Riser",
     price: 16000,
     productImage: product4,
+    productDescription:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et enim provident autem voluptatem corporis, quisquam laborum illo temporibus dignissimos maiores.",
     productCategory: "laptopsMonitores",
   },
   {
@@ -49,6 +57,8 @@ export const PRODUCTS = [
     productName: "Leather Desk Pad",
     price: 6500,
     productImage: product5,
+    productDescription:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et enim provident autem voluptatem corporis, quisquam laborum illo temporibus dignissimos maiores.",
     productCategory: "mouseTeclados",
   },
   {
@@ -56,6 +66,8 @@ export const PRODUCTS = [
     productName: "Laptop Dock",
     price: 10000,
     productImage: product6,
+    productDescription:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et enim provident autem voluptatem corporis, quisquam laborum illo temporibus dignissimos maiores.",
     productCategory: "laptopsMonitores",
   },
   {
@@ -63,6 +75,8 @@ export const PRODUCTS = [
     productName: "MagSafe Stand",
     price: 7000,
     productImage: product7,
+    productDescription:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et enim provident autem voluptatem corporis, quisquam laborum illo temporibus dignissimos maiores.",
     productCategory: "stands",
   },
   {
@@ -70,6 +84,8 @@ export const PRODUCTS = [
     productName: "Monitor Riser",
     price: 18000,
     productImage: product8,
+    productDescription:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et enim provident autem voluptatem corporis, quisquam laborum illo temporibus dignissimos maiores.",
     productCategory: "laptopsMonitores",
   },
   {
@@ -77,6 +93,8 @@ export const PRODUCTS = [
     productName: "Leather Mouse Pad",
     price: 4000,
     productImage: product9,
+    productDescription:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et enim provident autem voluptatem corporis, quisquam laborum illo temporibus dignissimos maiores.",
     productCategory: "mouseTeclados",
   },
   {
@@ -84,6 +102,8 @@ export const PRODUCTS = [
     productName: "Pen Cup",
     price: 2000,
     productImage: product10,
+    productDescription:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et enim provident autem voluptatem corporis, quisquam laborum illo temporibus dignissimos maiores.",
     productCategory: "otros",
   },
   {
@@ -91,6 +111,8 @@ export const PRODUCTS = [
     productName: "Planter",
     price: 2500,
     productImage: product11,
+    productDescription:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et enim provident autem voluptatem corporis, quisquam laborum illo temporibus dignissimos maiores.",
     productCategory: "otros",
   },
   {
@@ -98,6 +120,8 @@ export const PRODUCTS = [
     productName: "Wool Desk Pad",
     price: 6000,
     productImage: product12,
+    productDescription:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et enim provident autem voluptatem corporis, quisquam laborum illo temporibus dignissimos maiores.",
     productCategory: "mouseTeclados",
   },
   {
@@ -105,6 +129,8 @@ export const PRODUCTS = [
     productName: "Magic Keyboard Tray",
     price: 4000,
     productImage: product13,
+    productDescription:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et enim provident autem voluptatem corporis, quisquam laborum illo temporibus dignissimos maiores.",
     productCategory: "mouseTeclados",
   },
   {
@@ -112,6 +138,8 @@ export const PRODUCTS = [
     productName: "Trackpad Tray",
     price: 3500,
     productImage: product14,
+    productDescription:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et enim provident autem voluptatem corporis, quisquam laborum illo temporibus dignissimos maiores.",
     productCategory: "mouseTeclados",
   },
   {
@@ -119,6 +147,8 @@ export const PRODUCTS = [
     productName: "Laptop Riser v2",
     price: 22000,
     productImage: product15,
+    productDescription:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et enim provident autem voluptatem corporis, quisquam laborum illo temporibus dignissimos maiores.",
     productCategory: "laptopsMonitores",
   },
   {
@@ -126,6 +156,8 @@ export const PRODUCTS = [
     productName: "Wrist Rest",
     price: 5000,
     productImage: product16,
+    productDescription:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et enim provident autem voluptatem corporis, quisquam laborum illo temporibus dignissimos maiores.",
     productCategory: "mouseTeclados",
   },
 ];

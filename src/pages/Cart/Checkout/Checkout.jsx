@@ -14,14 +14,14 @@ function Checkout() {
         <div className="checkOutSection">
           <p className="checkOutSubtotal">Subtotal: ${totalAmount}</p>
           <button
-            className="checkOutBtn"
+            className="btnAlt"
             onClick={() => {
               navigate("/shop");
             }}
           >
             Continuar comprando
           </button>
-          <button className="checkOutBtn">Checkout</button>
+          <button className="btn">Checkout</button>
         </div>
       ) : (
         <h3>Su carrito esta vacío</h3>

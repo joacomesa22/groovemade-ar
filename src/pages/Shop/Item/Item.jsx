@@ -40,15 +40,6 @@ function Item(props) {
           ${price}
         </p>
       </div>
-
-      <button
-        className="itemCard__btn"
-        onClick={() => {
-          addToCart(id);
-        }}
-      >
-        Add to Cart {cartItemAmount > 0 && <>({cartItemAmount})</>}
-      </button>
     </div>
   );
 }

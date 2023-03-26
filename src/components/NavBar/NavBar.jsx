@@ -1,5 +1,5 @@
 import React from "react";
-import logoFull from "../../assets/logoFull.png";
+import logoFull2 from "../../assets/logoFull2.png";
 import CartWidget from "../CartWidget/CartWidget";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
@@ -12,7 +12,7 @@ export default function Navbar() {
     <header className="header">
       <div className="header__logoContainer">
         <img
-          src={logoFull}
+          src={logoFull2}
           onClick={() => {
             navigate("/");
           }}
@@ -30,9 +30,8 @@ export default function Navbar() {
           Contact
         </Link>
       </nav>
-      <Link to="/cart">
-        <CartWidget />
-      </Link>
+
+      <CartWidget />
     </header>
   );
 }

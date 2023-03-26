@@ -1,11 +1,12 @@
 import React, { useContext } from "react";
-import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
+import { useNavigate } from "react-router-dom";
+import { BsHandbag } from "react-icons/bs";
 import { ShopContext } from "../../context/ShopContext";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./CartWidget.css";
 
 export default function CartWidget() {
   const { cartItems } = useContext(ShopContext);
+  const navigate = useNavigate();
 
   const totalItems = () => {
     let total = 0;
@@ -16,8 +17,13 @@ export default function CartWidget() {
   };
 
   return (
-    <div className="cartWidget">
-      <FontAwesomeIcon icon={faShoppingCart} className="cartWidget__icon" />
+    <div
+      className="cartWidget"
+      onClick={() => {
+        navigate("/cart");
+      }}
+    >
+      <BsHandbag className="cartWidget__icon" />
       <span className="cartWidget__counter">{totalItems()}</span>
     </div>
   );
