@@ -1,7 +1,7 @@
 .cartWidget {
   display: flex;
   gap: 2px;
-  align-items: end;
+  align-items: flex-end;
 }
 
 .cartWidget__icon {

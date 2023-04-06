@@ -1,14 +1,11 @@
-import React, { useContext } from "react";
-import { ShopContext } from "../../../context/ShopContext";
+import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./Item.css";
 
 function Item(props) {
-  const { addToCart, cartItems } = useContext(ShopContext);
   const { id, productName, productImage, price } = props.data;
   const navigate = useNavigate();
 
-  const cartItemAmount = cartItems[id];
   return (
     <div className="itemCard">
       <div className="itemCard__img">

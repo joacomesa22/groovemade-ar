@@ -24,6 +24,7 @@ export const PRODUCTS = [
     productDescription:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et enim provident autem voluptatem corporis, quisquam laborum illo temporibus dignissimos maiores.",
     productCategory: "laptopsMonitores",
+    stock: 8,
   },
   {
     id: 2,
@@ -33,6 +34,7 @@ export const PRODUCTS = [
     productDescription:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et enim provident autem voluptatem corporis, quisquam laborum illo temporibus dignissimos maiores.",
     productCategory: "stands",
+    stock: 8,
   },
   {
     id: 3,
@@ -42,6 +44,7 @@ export const PRODUCTS = [
     productDescription:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et enim provident autem voluptatem corporis, quisquam laborum illo temporibus dignissimos maiores.",
     productCategory: "stands",
+    stock: 8,
   },
   {
     id: 4,
@@ -51,6 +54,7 @@ export const PRODUCTS = [
     productDescription:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et enim provident autem voluptatem corporis, quisquam laborum illo temporibus dignissimos maiores.",
     productCategory: "laptopsMonitores",
+    stock: 8,
   },
   {
     id: 5,
@@ -60,6 +64,7 @@ export const PRODUCTS = [
     productDescription:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et enim provident autem voluptatem corporis, quisquam laborum illo temporibus dignissimos maiores.",
     productCategory: "mouseTeclados",
+    stock: 8,
   },
   {
     id: 6,
@@ -69,6 +74,7 @@ export const PRODUCTS = [
     productDescription:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et enim provident autem voluptatem corporis, quisquam laborum illo temporibus dignissimos maiores.",
     productCategory: "laptopsMonitores",
+    stock: 8,
   },
   {
     id: 7,
@@ -78,6 +84,7 @@ export const PRODUCTS = [
     productDescription:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et enim provident autem voluptatem corporis, quisquam laborum illo temporibus dignissimos maiores.",
     productCategory: "stands",
+    stock: 8,
   },
   {
     id: 8,
@@ -87,6 +94,7 @@ export const PRODUCTS = [
     productDescription:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et enim provident autem voluptatem corporis, quisquam laborum illo temporibus dignissimos maiores.",
     productCategory: "laptopsMonitores",
+    stock: 8,
   },
   {
     id: 9,
@@ -96,6 +104,7 @@ export const PRODUCTS = [
     productDescription:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et enim provident autem voluptatem corporis, quisquam laborum illo temporibus dignissimos maiores.",
     productCategory: "mouseTeclados",
+    stock: 8,
   },
   {
     id: 10,
@@ -105,6 +114,7 @@ export const PRODUCTS = [
     productDescription:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et enim provident autem voluptatem corporis, quisquam laborum illo temporibus dignissimos maiores.",
     productCategory: "otros",
+    stock: 8,
   },
   {
     id: 11,
@@ -114,6 +124,7 @@ export const PRODUCTS = [
     productDescription:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et enim provident autem voluptatem corporis, quisquam laborum illo temporibus dignissimos maiores.",
     productCategory: "otros",
+    stock: 8,
   },
   {
     id: 12,
@@ -123,6 +134,7 @@ export const PRODUCTS = [
     productDescription:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et enim provident autem voluptatem corporis, quisquam laborum illo temporibus dignissimos maiores.",
     productCategory: "mouseTeclados",
+    stock: 8,
   },
   {
     id: 13,
@@ -132,6 +144,7 @@ export const PRODUCTS = [
     productDescription:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et enim provident autem voluptatem corporis, quisquam laborum illo temporibus dignissimos maiores.",
     productCategory: "mouseTeclados",
+    stock: 8,
   },
   {
     id: 14,
@@ -141,6 +154,7 @@ export const PRODUCTS = [
     productDescription:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et enim provident autem voluptatem corporis, quisquam laborum illo temporibus dignissimos maiores.",
     productCategory: "mouseTeclados",
+    stock: 8,
   },
   {
     id: 15,
@@ -150,6 +164,7 @@ export const PRODUCTS = [
     productDescription:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et enim provident autem voluptatem corporis, quisquam laborum illo temporibus dignissimos maiores.",
     productCategory: "laptopsMonitores",
+    stock: 8,
   },
   {
     id: 16,
@@ -159,5 +174,6 @@ export const PRODUCTS = [
     productDescription:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et enim provident autem voluptatem corporis, quisquam laborum illo temporibus dignissimos maiores.",
     productCategory: "mouseTeclados",
+    stock: 8,
   },
 ];

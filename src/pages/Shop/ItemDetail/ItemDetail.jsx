@@ -26,7 +26,9 @@ function ItemDetail({ prods }) {
         <button
           className="btn bgBlack"
           onClick={() => {
-            addToCart(prods.id);
+            if (cartItems[prods.id] < prods.stock) {
+              addToCart(prods.id);
+            }
           }}
         >
           Agregar al Carrito {cartItemAmount > 0 && <>({cartItemAmount})</>}
