@@ -67,7 +67,7 @@ function ItemListContainer() {
 
   return (
     <>
-      <Hero text="Accesorios que inspiran" bgImg="./heroImgs/deskImg2.jpg" />
+      <Hero text="Accesorios que inspiran" bgImg="/img/heroImgs/deskImg2.jpg" />
       <section className="itemsSection">
         <div className="itemSectionCategories">
           <Link className="itemSectionCategories__link" to={"/shop"}>
