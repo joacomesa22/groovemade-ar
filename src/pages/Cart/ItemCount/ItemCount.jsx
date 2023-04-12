@@ -3,25 +3,31 @@ import "./ItemCount.css";
 import { ShopContext } from "../../../context/ShopContext";
 
 function ItemCount(props) {
-  const { cartItems, addToCart, removeFromCart } = useContext(ShopContext);
-  const { id, stock } = props.data;
+  const { addToCart, removeFromCart } = useContext(ShopContext);
+  const {
+    id,
+    productName,
+    productDescription,
+    productImage,
+    price,
+    stock,
+    quantity,
+  } = props.data;
 
   return (
     <div className="itemCount">
       <button
         onClick={() => {
-          if (cartItems[id] < stock) {
-            addToCart(id);
-          }
+          addToCart(props.data);
         }}
         className="itemCount__btn"
       >
         +
       </button>
-      <input value={cartItems[id]} readOnly className="itemCount__counter" />
+      <input value={quantity} readOnly className="itemCount__counter" />
       <button
         onClick={() => {
-          removeFromCart(id);
+          removeFromCart(props.data);
         }}
         className="itemCount__btn"
       >

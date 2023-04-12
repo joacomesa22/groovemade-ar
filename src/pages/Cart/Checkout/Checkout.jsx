@@ -4,15 +4,18 @@ import { useNavigate } from "react-router-dom";
 import "./Checkout.css";
 
 function Checkout() {
-  const { getTotalAmount } = useContext(ShopContext);
-  const totalAmount = getTotalAmount();
+  const { cart } = useContext(ShopContext);
   const navigate = useNavigate();
+
+  const totalPrice = cart.reduce((acc, curr) => {
+    return acc + curr.price * curr.quantity;
+  }, 0);
 
   return (
     <>
-      {totalAmount > 0 ? (
+      {cart.length > 0 ? (
         <div className="checkOutSection">
-          <p className="checkOutSubtotal">Subtotal: ${totalAmount}</p>
+          <p className="checkOutSubtotal">Subtotal: ${totalPrice}</p>
           <button
             className="btnAlt"
             onClick={() => {
@@ -21,7 +24,14 @@ function Checkout() {
           >
             Continuar comprando
           </button>
-          <button className="btn">Checkout</button>
+          <button
+            className="btn"
+            onClick={() => {
+              console.log(cart);
+            }}
+          >
+            Checkout
+          </button>
         </div>
       ) : (
         <h3>Su carrito esta vacío</h3>

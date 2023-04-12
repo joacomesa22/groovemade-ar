@@ -12,25 +12,15 @@ function ItemDetailContainer() {
 
   useEffect(() => {
     const queryDb = getFirestore();
-    const queryDoc = doc(queryDb, "items", id);
+    const queryDoc = doc(queryDb, "products", id);
     getDoc(queryDoc).then((res) => setProduct({ id: res.id, ...res.data() }));
   }, [id]);
 
   return (
     <section className="detailSection">
-      <ItemDetail prods={product} />
+      <ItemDetail data={product} />
     </section>
   );
 }
 
 export default ItemDetailContainer;
-
-// const prom = new Promise((resolve) => {
-//   //   setTimeout(() => {
-//   resolve(PRODUCTS.find((prod) => prod.id === parseInt(id)));
-//   //   }, 2000);
-// });
-
-// prom.then((data) => {
-//   setProducts(data);
-// });

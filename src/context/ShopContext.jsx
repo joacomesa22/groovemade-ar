@@ -1,42 +1,58 @@
 import React, { createContext, useState } from "react";
-import { PRODUCTS } from "../products";
 export const ShopContext = createContext(null);
 
-const getDefaultCart = () => {
-  let cart = {};
-  for (let i = 1; i < PRODUCTS.length + 1; i++) {
-    cart[i] = 0;
-  }
-  return cart;
-};
-
 export const ShopContextProvider = ({ children }) => {
-  const [cartItems, setCartItems] = useState(getDefaultCart());
+  const [cart, setCart] = useState([]);
 
-  const getTotalAmount = () => {
-    let total = 0;
-    for (const item in cartItems) {
-      if (cartItems[item] > 0) {
-        let itemInfo = PRODUCTS.find((prod) => prod.id === Number(item));
-        total += itemInfo.price * cartItems[item];
+  const addToCart = (prod) => {
+    setCart((currItems) => {
+      const isInCart = currItems.find((item) => item.id === prod.id);
+      if (isInCart) {
+        return currItems.map((item) => {
+          if (item.id === prod.id && item.quantity < prod.stock) {
+            return { ...item, quantity: item.quantity + 1 };
+          } else {
+            return item;
+          }
+        });
+      } else {
+        return [
+          ...currItems,
+          {
+            id: prod.id,
+            productName: prod.productName,
+            productImage: prod.productImage,
+            productDescription: prod.Description,
+            price: prod.price,
+            stock: prod.stock,
+            quantity: 1,
+          },
+        ];
       }
-    }
-    return total;
+    });
   };
 
-  const addToCart = (itemId) => {
-    setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
-  };
-
-  const removeFromCart = (itemId) => {
-    setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));
+  const removeFromCart = (prod) => {
+    setCart((currItems) => {
+      if (currItems.find((item) => item.id === prod.id)?.quantity === 1) {
+        return currItems.filter((item) => item.id !== prod.id);
+      } else {
+        return currItems.map((item) => {
+          if (item.id === prod.id) {
+            return { ...item, quantity: item.quantity - 1 };
+          } else {
+            return item;
+          }
+        });
+      }
+    });
   };
 
   const contextValue = {
-    cartItems,
+    cart,
+    setCart,
     addToCart,
     removeFromCart,
-    getTotalAmount,
   };
 
   return (

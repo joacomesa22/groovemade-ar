@@ -20,7 +20,7 @@ function ItemListContainer() {
 
   useEffect(() => {
     const queryDb = getFirestore();
-    const queryCollection = collection(queryDb, "items");
+    const queryCollection = collection(queryDb, "products");
     if (category) {
       const queryFilter = query(
         queryCollection,
@@ -85,6 +85,9 @@ function ItemListContainer() {
           >
             Mouse y Teclado
           </Link>
+          <Link className="itemSectionCategories__link" to={"/shop/stands"}>
+            Stands
+          </Link>
           <Link className="itemSectionCategories__link" to={"/shop/otros"}>
             Otros
           </Link>
@@ -96,18 +99,3 @@ function ItemListContainer() {
 }
 
 export default ItemListContainer;
-
-// useEffect(() => {
-//   const getProducts = new Promise((resolve) => {
-//     // setTimeout(() => {
-//     resolve(
-//       category
-//         ? PRODUCTS.filter((prod) => prod.productCategory === category)
-//         : PRODUCTS
-//     );
-//     // }, 2000);
-//   });
-//   getProducts.then((data) => {
-//     setProducts(data);
-//   });
-// }, [category]);

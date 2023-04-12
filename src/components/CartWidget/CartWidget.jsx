@@ -5,16 +5,12 @@ import { ShopContext } from "../../context/ShopContext";
 import "./CartWidget.css";
 
 export default function CartWidget() {
-  const { cartItems } = useContext(ShopContext);
   const navigate = useNavigate();
+  const { cart } = useContext(ShopContext);
 
-  const totalItems = () => {
-    let total = 0;
-    for (const item in cartItems) {
-      total += cartItems[item];
-    }
-    return total;
-  };
+  const totalInCart = cart.reduce((acc, curr) => {
+    return acc + curr.quantity;
+  }, 0);
 
   return (
     <div
@@ -24,7 +20,7 @@ export default function CartWidget() {
       }}
     >
       <BsHandbag className="cartWidget__icon" />
-      <span className="cartWidget__counter">{totalItems()}</span>
+      <span className="cartWidget__counter">{totalInCart}</span>
     </div>
   );
 }
