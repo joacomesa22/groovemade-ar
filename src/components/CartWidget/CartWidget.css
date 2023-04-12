@@ -2,7 +2,7 @@
   display: flex;
   gap: 2px;
   align-items: flex-end;
-  width: 100px;
+  width: 50px;
 }
 
 .cartWidget__icon {

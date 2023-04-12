@@ -20,7 +20,11 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 30%;
+  gap: 2px;
+  width: 40%;
   font-size: 0.8rem;
+  color: #262626;
+}
+.cartItemCard__text p {
   color: #999999;
 }

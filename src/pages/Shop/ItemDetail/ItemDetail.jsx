@@ -6,7 +6,7 @@ import "./itemDetail.css";
 
 function ItemDetail(props) {
   const { cart, addToCart } = useContext(ShopContext);
-  const { id, productName, productImage, productDescription, price, stock } =
+  const { id, productName, productImage, productDescription, price } =
     props.data;
 
   const getQuantity = (id) => {

@@ -23,15 +23,8 @@ export default function Navbar() {
         <Link to="/shop" className="headerLinks__link">
           Shop
         </Link>
-        <Link to="/about" className="headerLinks__link">
-          About
-        </Link>
-        <Link to="/contact" className="headerLinks__link">
-          Contact
-        </Link>
+        <CartWidget />
       </nav>
-
-      <CartWidget />
     </header>
   );
 }

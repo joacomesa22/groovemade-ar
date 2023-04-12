@@ -20,7 +20,8 @@
 
 .headerLinks {
   display: flex;
-  gap: 2rem;
+  align-items: center;
+  gap: 1rem;
 }
 
 .headerLinks__link {
