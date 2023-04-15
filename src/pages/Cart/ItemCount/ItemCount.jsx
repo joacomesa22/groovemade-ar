@@ -4,15 +4,7 @@ import { ShopContext } from "../../../context/ShopContext";
 
 function ItemCount(props) {
   const { addToCart, removeFromCart } = useContext(ShopContext);
-  const {
-    id,
-    productName,
-    productDescription,
-    productImage,
-    price,
-    stock,
-    quantity,
-  } = props.data;
+  const { quantity } = props.data;
 
   return (
     <div className="itemCount">

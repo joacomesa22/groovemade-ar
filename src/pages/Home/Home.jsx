@@ -19,10 +19,7 @@ function Home() {
             la oficina. La empresa se enfoca en la fabricación de accesorios de
             escritorio, estuches de teléfonos móviles, fundas para portátiles,
             bandejas de almacenamiento, estantes de pared y otros productos de
-            diseño elegante y funcional. Los productos se fabrican utilizando
-            materiales de alta calidad, como madera, cuero y metal, y son
-            conocidos por su artesanía excepcional y su notable atención al
-            detalle.
+            diseño elegante y funcional.
           </p>
           <Link className="btn" to={"/shop"}>
             Ver Productos

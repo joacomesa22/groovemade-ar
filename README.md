@@ -1,70 +1,24 @@
-# Getting Started with Create React App
+# Grovemade Argentina
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## ¿Qué es Grovemade?
 
-## Available Scripts
+Grovemade es una empresa estadounidense que se dedica al diseño y fabricación de productos artesanales de alta calidad para el hogar y la oficina. La empresa se enfoca en la fabricación de accesorios de escritorio, estuches de teléfonos móviles, fundas para portátiles, bandejas de almacenamiento, estantes de pared y otros productos.
 
-In the project directory, you can run:
+## Sobre el proyecto
 
-### `npm start`
+Mi nombre es **Joaquín Mesa** y soy estudiante de la carrera de React Front-End en Coderhouse y estudiante de Comunicación Digital en la Universidad de Palermo. Para este proyecto decidí realizar el sitio web de Grovemade en su versión de Argentina. En este, el usuario puede acceder al catálogo de productos, agregar los que desee al carrito y finalizar la compra ingresando sus datos. Luego de esto recibe una notificación con su número de orden.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Funcionamiento de la app
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+El usuario ingresa en la página principal, donde puede leer una breve introducción a la empresa. Al dirigirse a la sección de los productos, puede hacer click en cada uno de ellos y acceder a información mas detallada. Desde allí puede agregarlo al carrito multiples veces. Luego, al hacer click en el ícono de la Navbar puede ver sus productos en el carrito y el precio total. Mediante un contador, puede aumentar la cantidad de cada producto y finalmente con el boton de Checkout puede pasar a finalizar la compra. Para terminar el proceso, se le solicitarán los datos y se generará la orden.
 
-### `npm test`
+## Tecnologías utilizadas
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- E-commerce desarrollado con React
+- Create React App -> Creación de la aplicación
+- Firebase -> Base de datos para los productos y las ordenes de compra
+- Toastify -> Notificación cuando el usuario finaliza su compra
+- React Icons -> Ícono del carrito en la barra de navegación
+- React Router -> Navegación del sitio
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Este proyecto fue realizado para el curso de React de Coderhouse, comisión 39605.
