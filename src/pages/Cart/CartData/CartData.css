@@ -1,0 +1,13 @@
+.checkOutSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  width: 100%;
+}
+
+.checkOutSubtotal {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #262626;
+}

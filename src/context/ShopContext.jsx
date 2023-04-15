@@ -48,11 +48,21 @@ export const ShopContextProvider = ({ children }) => {
     });
   };
 
+  const emptyCart = () => {
+    setCart([]);
+  };
+
+  const totalPrice = cart.reduce((acc, curr) => {
+    return acc + curr.price * curr.quantity;
+  }, 0);
+
   const contextValue = {
     cart,
     setCart,
     addToCart,
     removeFromCart,
+    emptyCart,
+    totalPrice,
   };
 
   return (

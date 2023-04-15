@@ -6,6 +6,10 @@
   padding: 2rem;
 }
 
+.cartSection h1 {
+  font-family: cursive;
+}
+
 .cartCardsContainer {
   display: flex;
   align-items: center;

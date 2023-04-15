@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-// import { db } from "../../../firebase/Firebase";
 import {
   getFirestore,
   collection,
@@ -8,7 +7,6 @@ import {
   where,
 } from "firebase/firestore";
 import { useParams } from "react-router-dom";
-// import { PRODUCTS } from "../../../products";
 import ItemList from "../ItemList/ItemList";
 import { Link } from "react-router-dom";
 import "./ItemListContainer.css";
@@ -45,25 +43,6 @@ function ItemListContainer() {
       );
     }
   }, [category]);
-
-  // const getProducts = async () => {
-  //   try {
-  //     const querySnapshot = await getDocs(collection(db, "products"));
-  //     const docs = [];
-  //     querySnapshot.forEach((doc) => {
-  //       docs.push({ ...doc.data(), id: doc.id });
-  //     });
-  //     return docs;
-  //   } catch (error) {
-  //     console.log(error);
-  //   }
-  // };
-  // getProducts().then((data) => {
-  //   const filteredData = category
-  //     ? data.filter((prod) => prod.productCategory === category)
-  //     : data;
-  //   setProducts(filteredData);
-  // });
 
   return (
     <>
