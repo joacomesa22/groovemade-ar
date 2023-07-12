@@ -21,4 +21,6 @@ El usuario ingresa en la página principal, donde puede leer una breve introducc
 - React Icons -> Ícono del carrito en la barra de navegación
 - React Router -> Navegación del sitio
 
+**App desplegada:** https://groovemade-ar.vercel.app/
+
 Este proyecto fue realizado para el curso de React de Coderhouse, comisión 39605.
