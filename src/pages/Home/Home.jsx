@@ -12,7 +12,7 @@ function Home() {
       ></Hero>
       <section className="about">
         <div className="about__text">
-          <h1>¿Qué es Grovemade?</h1>
+          <h2>¿Qué es Grovemade?</h2>
           <p>
             Grovemade es una empresa estadounidense que se dedica al diseño y
             fabricación de productos artesanales de alta calidad para el hogar y

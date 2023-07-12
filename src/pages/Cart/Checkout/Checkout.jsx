@@ -108,13 +108,10 @@ function Checkout() {
             <label htmlFor="direccion">Dirección</label>
             <input type="text" name="direccion" required />
           </div>
-          <button type="submit" className="btn">
+          <button type="submit" className="btn form__submit">
             Finalizar Compra
           </button>
         </form>
-      </div>
-      <div className="checkout__img">
-        <img src="./img/heroImgs/deskImg3.jpeg" alt="accesorios" />
       </div>
     </section>
   );

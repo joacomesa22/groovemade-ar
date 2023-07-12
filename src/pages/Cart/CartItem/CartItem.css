@@ -24,7 +24,15 @@
   width: 40%;
   font-size: 0.8rem;
   color: #262626;
+  width: 100%;
 }
+
 .cartItemCard__text p {
   color: #999999;
+}
+
+@media screen and (max-width: 768px) {
+  .cartItemCard__img {
+    display: none;
+  }
 }

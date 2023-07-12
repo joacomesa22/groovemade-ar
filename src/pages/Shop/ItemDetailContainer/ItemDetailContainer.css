@@ -3,20 +3,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 76px);
   gap: 2rem;
 }
 
-.detailSection__btn {
-  padding: 8px;
-  background-color: #000;
-  color: #fff;
-  border: 2px solid #000;
-  font-size: 1.4rem;
-  transition: all 0.3s;
-}
+@media screen and (min-width: 768px) {
+  .detailSection {
+    height: 100vh;
+  }
 
-.detailSection__btn:hover {
-  color: #000;
-  background-color: #fff;
 }

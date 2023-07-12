@@ -11,3 +11,9 @@
   font-weight: 600;
   color: #262626;
 }
+
+@media screen and (max-width: 768px) {
+  .checkOutSection {
+    flex-wrap: wrap;
+  }
+}

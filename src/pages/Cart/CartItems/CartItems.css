@@ -8,6 +8,7 @@
 
 .cartSection h1 {
   font-family: cursive;
+  text-align: center;
 }
 
 .cartCardsContainer {
@@ -15,4 +16,10 @@
   align-items: center;
   flex-direction: column;
   gap: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .cartCardsContainer {
+    width: 100%;
+  }
 }

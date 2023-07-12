@@ -2,18 +2,19 @@
   padding: 80px;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   align-items: center;
   gap: 4rem;
 }
+
 .about__text {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  max-width: 600px;
+  width: 100%;
+  max-width: 500px;
 }
 
-.about__text h1 {
+.about__text h2 {
   font-size: 3rem;
   font-family: cursive;
 }
@@ -25,8 +26,25 @@
 .about__img {
   max-width: 600px;
 }
+
 .about__img img {
   width: 100%;
   border-radius: 10px;
   box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.6);
+}
+
+@media screen and (max-width: 1040px) {
+  .about {
+    flex-wrap: wrap;
+    padding: 40px;
+  }
+
+  .about__text {
+    text-align: center;
+    align-items: center;
+  }
+
+  .about__text h2 {
+    font-size: 2rem;
+  }
 }

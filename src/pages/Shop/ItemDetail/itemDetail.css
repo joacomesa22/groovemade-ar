@@ -2,12 +2,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 6rem;
-  position: relative;
+  gap: 4rem;
+  padding: 2rem;
+}
+
+.itemDetailCard__img {
+  max-width: 500px;
 }
 
 .itemDetailCard__img img {
-  max-width: 800px;
+  width: 100%;
 }
 
 .itemDetailCard__right {
@@ -22,6 +26,7 @@
   flex-direction: column;
   gap: 0.5rem;
   color: #262626;
+  max-width: 500px;
 }
 
 .itemDetailCard__right--text--name {
@@ -36,9 +41,18 @@
 .itemDetailCard__right--text--description {
   font-size: 0.9rem;
   color: #262626;
-  max-width: 500px;
 }
 
 .backIconFs {
   font-size: 1.2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .itemDetailCard {
+    flex-wrap: wrap;
+  }
+
+  .itemDetailCard__right--text--name {
+    font-size: 2rem;
+  }
 }
